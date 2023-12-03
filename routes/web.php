@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BingoController;
+
+Route::get('//', [BingoController::class, 'draw']);
+Route::get('/bingo/draw-number', [BingoController::class, 'drawNumber']);
+
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +17,3 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
