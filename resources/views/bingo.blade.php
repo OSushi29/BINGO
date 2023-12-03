@@ -59,6 +59,7 @@
                     if (data.number) {
                         randomNumberElement.textContent = data.number;
                         markNumberAsSelected(data.number);
+                        console.log("当選した数字: " + data.number);
                     } else {
                         randomNumberElement.textContent = data.message;
                     }
