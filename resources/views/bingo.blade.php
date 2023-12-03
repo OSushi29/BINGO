@@ -67,18 +67,6 @@
         }, 2500);
     }
 
-    function onPageLoad() {
-        fetch('/bingo/show')
-            .then(response => response.json())
-            .then(data => {
-                if (data.selectedNumbers) {
-                    data.selectedNumbers.forEach(number => {
-                        markNumberAsSelected(number);
-                    });
-                }
-            });
-    }
-
     document.getElementById('drawButton').addEventListener('click', drawButtonClicked);
     window.addEventListener('load', onPageLoad);
 </script>
