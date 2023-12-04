@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8 text-center mb-4">
-                <div id="randomNumber" class="display-4 my-4" style="font-size: 10rem;"></div>
+                <div id="randomNumber" class="display-4 my-4" style="font-size: 20rem;"></div>
 
                 @if(isset($number))
                     <div id="finalNumber" class="display-1 my-4 d-none">{{ $number }}</div>
